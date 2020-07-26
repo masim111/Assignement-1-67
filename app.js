@@ -1492,3 +1492,495 @@
 
 // console.log(S)
 // console.log(S1)
+
+
+
+
+
+
+// // chp # 38-42
+
+// question 1
+
+// function power(a,b){
+//     document.write('Value of a is '+a)
+//     document.write('<br>Value of b is '+b)
+//     var raised = Math.pow(a,b)
+//     document.write('<br>Raised value is '+raised)
+// }
+// power(2,5);
+
+// // question 2
+
+// document.write('<br><br>')
+// var anyYear = parseInt(prompt('Enter any year'))
+// function leapYear(){
+//     switch(anyYear){
+//     case 2012:
+//         document.write(anyYear+" is a leap year");
+//         break;
+//     case 2012:
+//         document.write(anyYear+" is a leap year");
+//         break;
+//     case 2012:
+//         document.write(anyYear+" is a leap year");
+//         break;
+//     default:
+//         document.write(anyYear+ " is not a leap year");
+//     }
+// }
+// leapYear();
+
+// // question 3
+
+// document.write('<br><br>')
+// var a, b, c;
+// a = parseInt(prompt('Enter value of first side of triangle'))
+// b = parseInt(prompt('Enter value of second side of triangle'))
+// c = parseInt(prompt('Enter value of third side of triangle'))
+// var s = (a+b+c)/3;
+// function valueOfArea(){
+//     document.write('The area of triangle is '+areaOfTriangle());
+// }
+
+// function areaOfTriangle(){
+//     var area = s*((s-a)*(s-b)*(s-c))
+//     return area;
+// }
+
+// valueOfArea();
+
+// // question4
+
+// document.write('<br><br>')
+// var sub1 = parseInt(prompt('Enter your urdu marks'))
+// var sub2 = parseInt(prompt('Enter your english marks'))
+// var sub3 = parseInt(prompt('Enter your maths marks'))
+// var average;
+
+// function studentRecord(){
+//     document.write('Totals marks of student is '+averageOfMarks())
+//     document.write('<br>Percentage of student is '+percentageOfMarks().toFixed(2)+'%')
+// }
+
+// function averageOfMarks(){
+//     average = sub1 + sub2 + sub3;
+//     return average;
+// }
+
+// function percentageOfMarks(){
+//     var per = (average*100)/300;
+//     return per;
+// }
+
+// studentRecord();
+
+// // task 5
+
+// document.write('<br><br>')
+// var para = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt neque molestiae at illum dolorum beatae commodi esse numquam quaerat? Error cumque harum doloribus omnis blanditiis reiciendis quaerat, sit totam nobis.'
+// function indexOfFunc(){
+//     var alpha = prompt('Enter an alphabet')
+//     var findIndex = para.indexOf(alpha)
+//     var i = 0;
+//     do{
+//         document.write('Index of alphabet '+alpha+' is '+findIndex++ +'<br>')
+//         i++;
+//         findIndex = para.indexOf(alpha, findIndex +1)
+//     }while(findIndex !== -1)
+// }
+// indexOfFunc();
+
+// //question 6
+
+// document.write('<br><br>')
+// var sentence = 'Lorem ipsum dolor sit amet.'
+
+// function deleteVowel(){
+//     document.write('Before removing vowels: '+sentence);
+//     sentence = sentence.replace(/[aeiou]/g,'');
+//     document.write('<br>After removing vowels: '+sentence);
+// }
+// deleteVowel();
+
+// // question 7
+
+// document.write('<br><br>')
+// var sentence1 = 'Pleases read this application and give me gratuity';
+// var hasSeen = false;
+// function occurenceOfVowels(){
+//     var vowelCount = 0;
+//     for(var letter of sentence1.toLowerCase()){
+//         switch(letter){
+//             case 'a':
+//             case 'e':
+//             case 'i':
+//             case 'o':
+//             case 'u':
+//             {
+//                 if(hasSeen){
+//                     vowelCount++;
+//                     hasSeen = false;
+//                 }
+//                 else{
+//                     hasSeen = true;
+//                 }
+//                 break;
+//             }
+//             default:
+//                 hasSeen = false;
+//         }
+//     }
+//     return vowelCount;
+// }
+// document.write('The total occurance is '+occurenceOfVowels())
+
+// // question 8
+
+// document.write('<br><br>')
+// var distanceInKm = parseInt(prompt('Distance Between Karachi to Lahore in Kilometer'))
+// function mainDistance(){
+//     document.write('Distance in meter: '+meter())
+//     document.write('<br>Distance in feet: '+feet())
+//     document.write('<br>Distance in inch: '+inch())
+//     document.write('<br>Distance in centimeter: '+centimeter())
+// }
+
+// function meter(){
+//     var m = distanceInKm * 1000;
+//     return m;
+// }
+
+// function feet(){
+//     var f = distanceInKm * 3280.8;
+//     return f;
+// }
+
+// function inch(){
+//     var i = distanceInKm * 39370.1;
+//     return i;
+// }
+
+// function centimeter(){
+//     var cm = distanceInKm * 100000;
+//     return cm;
+// }
+// mainDistance();
+
+// // question 9
+
+// document.write('<br><br>')
+// var workingHours = parseInt(prompt('Enter the working hours of employee'))
+// function overTime(){
+//     if(workingHours > 40){
+//         var overtime = workingHours - 40;
+//         var overtimePay = overtime * 12.00;
+//         document.write('The overtime of the employee is '+overtimePay.toFixed(2))
+//     }
+//     else{
+//         document.write("You have to work for more than 40 hours to get over time")
+//     }
+// }
+// overTime();
+
+// // question 10
+
+// document.write('<br><br>')
+// var withDraw = parseInt(prompt('Enter your amount'))
+// function domination(){
+//     var hundred = Math.floor(withDraw / 100);
+//     var fifty = Math.floor((withDraw % 100) / 50);
+//     var ten = Math.floor(((withDraw % 100) % 50) / 10);
+//     var remain = Math.floor(((withDraw % 100) % 50) % 10);
+//     document.write('You will have '+hundred+' hundreds notes '+fifty+' fifty notes '+ten+' ten notes and '+remain+' coins')
+// }
+// domination();
+
+// //chp # 38-42
+
+// question 1
+
+// function google(){
+//     alert('Go to google')
+// }
+
+// // question 2
+
+// function mobile(){
+//     alert('Thanks for puchasing mobile from us')
+// }
+
+// // question 3
+// var table = document.getElementById("table").childNodes;
+// for(var x = 0 ; x < 10 ; x++){
+// }
+// function deleteR(r){
+//     var i = r.parentNode.parentNode.rowIndex;
+//     document.getElementById("table").deleteRow(i);
+// }
+
+// // question 4
+
+// function mouseOver(){
+//     document.getElementById('img').setAttribute('src','https://image.shutterstock.com/image-photo/white-smoke-cloud-black-background-260nw-1439539445.jpg')
+// }
+
+// function mouseOut(){
+//     document.getElementById('img').setAttribute('src','https://image.shutterstock.com/image-illustration/abstract-blue-red-smoke-steam-260nw-1468643051.jpg')
+// }
+
+// // question 5
+
+// var counter = 0;
+// var counterHeading = document.getElementById('counter')
+
+// function increaseNum(){
+//     if(counter < 9){
+//         counter++;
+//         counterHeading.innerHTML = '0' + counter;
+//     }
+//     else{
+//         counter++;
+//         counterHeading.innerHTML = counter;
+//     }
+// }
+
+// function decreaseNum(){
+//     if(counter <= 0){
+//         counter = 0;
+//     }
+//     else  if(counter <= 10){
+//         counter--;
+//         counterHeading.innerHTML = '0' + counter;
+//     }
+//     else{
+//         counter--;
+//         counterHeading.innerHTML = counter;
+//     }
+// }
+
+// var countValueNum = document.getElementById('countvalue');
+// function countValue(){
+//     countValueNum.innerHTML = 'Count<br>';
+//     countValueNum.innerHTML += counterHeading.innerHTML;
+//     counterHeading.innerHTML = '0'+ 0;
+//     counter = 0;
+// }
+
+
+// ////// chapters 49-52
+
+
+// //  question 1
+
+// var firstName = document.getElementById('firstName');
+// var lastName = document.getElementById('lastName');
+// var userName = document.getElementById('userName');
+// var email = document.getElementById('email');
+// var pswrd = document.getElementById('pswrd');
+// var repswrd = document.getElementById('repswrd')
+
+// function buttonClick(){
+//     if(firstName.value === "" && lastName.value === "" && userName.value === "" && email.value === "" && pswrd.value === ""){
+//         alert('Please give your information')
+//     }
+//     else{
+//         if(pswrd.value != repswrd.value){
+//             alert('Password did not match')
+//         }
+//         else{
+//             document.write('First Name : '+firstName.value+'<br>Last Name : '+lastName.value+'<br>User Name : '+userName.value+'<br>Email : '+email.value+'<br>Pasword : '+pswrd.value)
+//         }
+//     }
+
+// }
+
+// //  question 2
+
+// var textArea = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum posuere nisl. Etiam enim lorem, pellentesque vitae aliquet ut, fringilla quis libero. Suspendisse tristique ipsum vitae elit placerat, in rutrum lectus accumsan. Ut nisl diam, ullamcorper nec sapien quis, dictum luctus mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris at tempor mauris. Nulla facilisi. Etiam tempor sed est in tincidunt. Praesent lacinia augue eu mauris rutrum, sit amet feugiat orci auctor. Etiam vehicula cursus nisl, a facilisis tellus. Aliquam condimentum tempor lacus, quis fringilla ante ornare at. Donec molestie auctor nunc, at vulputate neque rutrum at. Proin molestie dolor sed venenatis ultricies. Praesent posuere ut lectus vel fermentum. Maecenas libero nibh, fringilla ut cursus vel, tempor in libero.<br><br>Vivamus justo mi, dignissim convallis auctor ac, pharetra auctor felis. Mauris consequat enim eget sodales suscipit. Vivamus hendrerit erat ac massa ornare ullamcorper. Curabitur sagittis velit sed facilisis facilisis. Nam tempus, mauris a egestas faucibus, enim purus laoreet massa, eget commodo neque magna non sem. Donec rhoncus sem maximus odio lobortis rhoncus. Cras et consequat tortor. Ut ornare, nisi ac egestas vestibulum, ante nibh finibus tortor, sit amet porttitor sapien ante at lectus. Nunc molestie tempor felis et venenatis. Cras efficitur sollicitudin lacus, non finibus magna volutpat gravida."
+// function seeAllText(){
+//     document.getElementById('para').innerHTML = textArea;
+// }
+
+// //  question 3
+
+
+// var index,table = document.getElementsByTagName('table')[0];
+// var editButton = document.getElementById('edit').innerHTML;
+// var nameValue = document.getElementById('first-name');
+// var classValue = document.getElementById('class');
+// var courseValue = document.getElementById('course');
+// var deleteButton = document.getElementById('delete').innerHTML;
+// var buttonAdd = document.getElementById('buttonAdd')
+// function addToTable(){
+//     var newRow = table.insertRow(table.length);
+//     var cell0 = newRow.insertCell(0);
+//     var cell1 = newRow.insertCell(1);
+//     var cell2 = newRow.insertCell(2);
+//     var cell3 = newRow.insertCell(3);
+//     var cell4 = newRow.insertCell(4);
+//     cell0.innerHTML = editButton;
+//     cell1.innerHTML = nameValue.value;
+//     cell2.innerHTML = classValue.value;
+//     cell3.innerHTML = courseValue.value;
+//     cell4.innerHTML = deleteButton;
+//     nameValue.value = "";
+//     classValue.value = "";
+//     courseValue.value = "";
+
+
+// }
+
+    
+// function deleteRow(e){
+//     e.parentNode.parentNode.remove();
+// }
+
+// function editRow(e){
+//     var val = e.parentNode.parentNode;
+//     nameValue.value = val.children[1].innerHTML;
+//     e.parentNode.parentNode.children[1].innerHTML = nameValue.value;
+//     classValue.value = val.children[2].innerHTML;
+//     e.parentNode.parentNode.children[2].innerHTML = classValue.value;
+//     courseValue.value = val.children[3].innerHTML;
+//     e.parentNode.parentNode.children[3].innerHTML = courseValue.value;
+// }
+
+// //////////////////// chapters 52-57
+
+
+
+// // questionk 1
+
+// var myPics = ['images/1.jpg','images/2.jpg','images/3.jpg','images/4.png','images/5.jpg',
+// 'images/6.jpg','images/7.png','images/8.jpg','images/9.jpg','images/10.jpg',
+// 'images/11.jpg','images/12.jpg','images/13.jpg','images/14.png','images/15.jpg']
+
+// for(var i=0; i < myPics.length;i++){
+//     var imgElement = document.createElement('img');
+//     imgElement.setAttribute('class','images-all')
+//     imgElement.src = myPics[i];
+//     imgElement.setAttribute('onclick','showModal()')
+//     var src = document.getElementById("x");
+//     src.appendChild(imgElement);
+// }
+
+// var modal = document.getElementById("myModal");
+// var modalImg = document.getElementById("img01");
+// function showModal(){
+//     setTimeout(()=>{ modal.style.display = "block"; }, 550)
+//     modalImg.src = imgElement.src;
+// }
+
+// var span = document.getElementsByClassName("close")[0];
+// function closeModal() {
+//     setTimeout(()=>{ modal.style.display = "none"; }, 550)
+// }
+
+// // question 2
+
+// var textDiv = document.getElementById('y')
+// var para = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus ipsa, unde non sequi error repellendus distinctio libero praesentium perspiciatis, ex maiores vel dolorem, tenetur iusto. Possimus asperiores quam obcaecati."
+// var createPara = document.createElement('p');
+// createPara.setAttribute('class','para')
+// var createParaText = document.createTextNode(para);
+// createPara.appendChild(createParaText)
+// textDiv.appendChild(createPara)
+
+// var zoomButtons = document.getElementById('button')
+
+// var zoomIn = document.createElement('button')
+// zoomIn.setAttribute('onclick','zoomIN()')
+// var zoomInText = document.createTextNode('+')
+// var zoomInPlace = zoomIn.appendChild(zoomInText)
+// zoomButtons.appendChild(zoomIn)
+
+// var zoomOut = document.createElement('button')
+// zoomOut.setAttribute('onclick','zoomOUT()')
+// var zoomOutText = document.createTextNode('-')
+// var zoomOutPlace = zoomOut.appendChild(zoomOutText)
+// zoomButtons.appendChild(zoomOut)
+
+
+// var fontSize = 10;
+// function zoomIN() {
+// 	fontSize += 10;
+// 	createPara.style.fontSize = fontSize + "px";
+// }
+// function zoomOUT() {
+//     fontSize -= 10;
+//     if(fontSize<=10){
+//         fontSize = 10;
+//     }
+//     else{
+//         createPara.style.fontSize = fontSize + "px";
+//     }
+// }
+
+// /////////////////////////////////// chapters 58-67
+// //  question 1(i)
+
+// var content = document.getElementById('main-content');
+
+// // (ii)
+
+// var childOfContent = content.childNodes;
+// for(var i=0 ; i< childOfContent.length; i++){
+//     console.log(childOfContent[i])
+// }
+
+// // (iii)
+
+// for(var j=0;j<content.childNodes.length;j++){
+//     var render = content.childNodes[j].textContent;
+//     document.write(render+'<br>')
+// }
+
+// // (iv)
+
+// var firstName = document.getElementById("first-name");
+// firstName.setAttribute('value','Enter Your First Name')
+
+// // (v)
+
+// var lastName = document.getElementById("last-name");
+// lastName.setAttribute('value','Enter Your Last Name')
+
+// var email = document.getElementById("email");
+// email.setAttribute('value','Enter Your Email')
+
+// // task 2(i)
+
+// var formContent = document.getElementById('form-content').nodeType;
+// console.log(formContent)
+
+// // (ii)
+
+// var lastNameElement = document.getElementById('lastName');
+// console.log(lastNameElement.nodeType)
+// console.log(lastNameElement.childNodes)
+
+// // (iii)
+
+// var findChildNode = content.hasChildNodes('lastName')
+// console.log(findChildNode)
+
+// // (iv)
+
+// var firstChild = content.firstChild;
+// var lastChild = content.lastChild;
+// console.log(firstChild)
+// console.log(lastChild)
+
+// // (v)
+
+// var nextElement = lastNameElement.nextSibling;
+// var prevElement = lastNameElement.previousSibling;
+// console.log(nextElement)
+// console.log(prevElement)
+
+// // (vi)
+
+// var parentEmail = email.parentNode;
+// console.log(parentEmail)
+// console.log(email.nodeType)
